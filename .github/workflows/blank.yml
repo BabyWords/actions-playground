@@ -6,8 +6,18 @@ on:
   workflow_dispatch:  # 可以手动触发
 
 jobs:
-  hello_world:
+  deploy-dev:
     runs-on: ubuntu-latest
     steps:
       - name: 打印信息
-        run: echo "🎉 你好 GitHub Actions!"
+        run: echo "deploy dev done!"
+  deploy-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 打印信息
+        run: echo "deploy qa done"
+  deploy-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 打印信息
+        run: echo "deploy prod done"
