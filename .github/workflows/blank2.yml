@@ -1,0 +1,13 @@
+name: Hello Actions
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # 可以手动触发
+
+jobs:
+  hello_world2222:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 打印信息
+        run: echo "🎉 你好 GitHub Actions!"
